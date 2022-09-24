@@ -1,6 +1,11 @@
 const { StatusCodes } = require('http-status-codes')
 const path = require('path')
 const uploadProductImage = async (req, res) => {
+  // check if file exists
+
+  //check format
+  // check size
+
   const productImage = req.files.image
   const imagePath = path.join(
     __dirname,
